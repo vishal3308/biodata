@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image:url('nature.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menu-bar{
+    text-align: center;
+    background-color: rgb(148 118 234 / 29%);
+}
+.menu-bar ul{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.menu-bar ul li{
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+}
+.active{
+    background-color: rgb(235, 20, 181);
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li:hover{
+  background-color: tomato;
+}
+.menu-bar ul li .submenu{   
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    top: 38px;
+    left: 0px;
+    transition: 0.5s;
+    
+}
+.menu-bar ul li .submenu ul{
+   display: block;
+}
+.menu-bar ul li .submenu ul li{
+      padding: 6px;
+      border-bottom: 1px solid white;
+      text-align: left;
+}
+.menu-bar ul li .submenu ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .submenu{
+    display: block;
+}
+.info{
+    margin-top: 40vh;
+    text-align: center;
+    color: white;
+}
+.info a{
+    border-radius: 20px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(113, 111, 230);
+    mix-blend-mode: multiply;
+}
+h1{
+    position: relative;
+    font-size: 40px;
+}
+.info h3{
+    font-size: 25px;
+}
+h1::after{
+  content: "Gopalapur";
+   animation-name:address;
+   animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes address{
+    0%{ content: "Gopalapur";}
+    25%{ content: "Buxa";}
+    50%{ content: "Jaunpur";}
+    100%{ content: "Utter Pradesh";}
+}
+@media screen and (max-width:680px){
+    body{
+        border: 2px solid red;
+    }
+    .menu-bar>ul>li{
+        padding: 16px 10px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+}

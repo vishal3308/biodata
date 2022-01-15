@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishalweb/neonbutton</title>
+    <link rel="stylesheet" href="neonbutton.css">
+</head>
+
+<body>
+    <a href="#"><span>VISHAL</span></a>
+    <a href="#" id="next" onclick="start()">
+        <div id="after"></div><span>MAURYA</span>
+        <div id="before"></div>
+    </a>
+
+</body>
+<script>
+    let a = document.getElementById(`after`).style.opacity;
+    console.log(a);
+    let b = document.getElementById(`before`);
+    function start() {
+        if (a == 0) {
+            a = `1`;
+            b.style.opacity = `1`;
+            document.getElementsByTagName(`span`)[1].style.color = `#ffff`;
+        }
+        else {
+            a = `0`;
+            b.style.opacity = `0`;
+            document.getElementsByTagName(`span`)[1].style.color = `rgba(255,255,255,0.2)`;
+        }
+    }
+
+</script>
+
+</html>

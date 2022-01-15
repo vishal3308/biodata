@@ -1,0 +1,315 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    max-height:100vh ;
+    background:url("vishal.jpg"),#1f242d;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.hover,.click,.color,.extra{
+    position: relative;
+}
+a{
+  padding: 15px 30px;
+  font-size: 40px;
+  color: rgba(255, 255, 255,0.6);
+  text-decoration: none;
+  transition: 00.5s;
+}
+.button{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+       
+}
+.logo{
+    text-align: center;
+    color: white;
+}
+img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+a hr{
+    background-color: #2894ff;
+    border-style: none;
+    position: absolute;
+}
+a:hover{
+    color: white;
+}
+.hover a hr:nth-child(1){
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 2px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform,0.5s;
+}
+.hover a:hover hr:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform,0.5s;
+
+}
+.hover a hr:nth-child(3){
+    right: 0;
+     bottom: 0;
+    height: 100%;
+    width: 2px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform,0.5s;
+    transition-delay: 00.5s;
+}
+.hover a:hover hr:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform,0.5s;
+    transition-delay: 00.5s;
+}
+.hover a hr:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform,0.5s;
+}
+.hover a:hover hr:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform,0.5s;
+}
+.hover a hr:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform,0.5s;
+    transition-delay: 00.5s;
+}
+.hover a:hover hr:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform,0.5s;
+    transition-delay: 00.5s;
+
+}
+/* ----------------------onclick work */
+.click{
+    margin-left: 15px;
+}
+.click a hr:nth-child(1){
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 2px;
+    transition-property: height;
+    transition-duration: 00.5s;
+    transition-delay: 0.5s;
+}
+.click a:hover hr:nth-child(1){
+    height: 100%;
+    transition-delay: 0s;
+}
+.click a hr:nth-child(3){
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 2px;
+    transition-property: height;
+    transition-duration: 00.5s;
+}
+.click a:hover hr:nth-child(3){
+    height: 100%;
+    transition-delay: 00.5s;
+}
+.click a hr:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 00.5s;
+    transition-delay: 00.5s;
+}
+.click a:hover hr:nth-child(2){
+    width: 100%;
+    transition-delay: 0s;
+}
+.click a hr:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 00.5s;
+}
+.click a:hover hr:nth-child(4){
+    width: 100%;
+    transition-delay: 00.5s;
+}
+.color a:link{
+    animation-name: magic;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes magic{
+    0%{
+    color: #2894ff;
+    }
+    10%{
+    color: #ff2828;
+    }
+    20%{
+    color: #28f1ff;
+    }
+    30%{
+    color: #8c31d6;
+    }
+    40%{
+    color: #191df1;
+    }
+    50%{
+    color: #10f12e;
+    }
+    60%{
+    color: #55831a;
+    }
+    70%{
+    color: #d8e614;
+    }
+    80%{
+        color: #2894ff;
+    }
+  90%{
+     color: #e00b0b;
+    }
+   100%{
+   color: #f000a0;
+  }       
+}
+
+.color a:hover body{
+    animation-name: backgroundmagic;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes backgroundmagic{
+    0%{
+    background-color: #2894ff;
+    }
+    10%{
+    background-color: #ff2828;
+    }
+    20%{
+    background-color: #28f1ff;
+    }
+    30%{
+    background-color: #8c31d6;
+    }
+    40%{
+    background-color: #191df1;
+    }
+    50%{
+    background-color: #10f12e;
+    }
+    60%{
+    background-color: #55831a;
+    }
+    70%{
+    background-color: #d8e614;
+    }
+    80%{
+        background-color: #2894ff;
+    }
+  90%{
+     background-color: #e00b0b;
+    }
+   100%{
+   background-color: #f000a0;
+  }       
+}
+/* --------------------extra------------------- */
+.extra{
+    margin-left: 15px;
+}
+
+.extra a hr:nth-child(1){
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 3px;
+    transition-property: height;
+    transition-duration: 00.5s;
+    transition-delay: 0.0s;
+    background-color:#ff2828 ;
+}
+.extra a:hover hr:nth-child(1){
+    height: 100%;
+    transition-delay: 1.5s;
+    background-color:#28f1ff ;
+}
+.extra a hr:nth-child(3){
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 3px;
+    transition-property: height;
+    transition-duration: 00.5s;
+    transition-delay: 1.0s;
+    background-color: #8c31d6;
+}
+.extra a:hover hr:nth-child(3){
+    height: 100%;
+    transition-delay: 00.5s;
+    background-color: #191df1;
+}
+.extra a hr:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    transition-property: width;
+    transition-duration: 00.5s;
+    transition-delay: 1.5s;
+    background-color: #10f12e;
+
+}
+.extra a:hover hr:nth-child(2){
+    width: 100%;
+    transition-delay: 0s;
+    background-color: #55831a;
+}
+.extra a hr:nth-child(4){
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 3px;
+    transition-property: width;
+  transition-delay: 00.5s;
+    transition-duration: 00.5s;
+    background-color: #d8e614;
+
+}
+.extra a:hover hr:nth-child(4){
+    width: 100%;
+    transition-delay: 1s;
+    background-color: #f000a0;
+
+}

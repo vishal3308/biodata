@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-vishal-store</title>
+    <link rel="stylesheet" href="vishalstore.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="vishalstore.html"><img src="images/vishal.png" alt="logo" width="200px" height="40px"
+                        style="border: 5px solid #f8b4b4;"></a>
+            </div>
+            <div class="nav">
+                <ul id="menulist">
+                    <li><a href="vishalstore.html">HOME</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+            <a href="#" id="cart"><img src="images/cart.png" alt="cart" height="20px" width="20px"></a>
+            <a href="#" id="menutoggle"><img src="images/menu.png" onclick="toggle()"></a>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="rightsort">
+            <h3>Product List
+            </h3>
+        </div>
+        <div class="rightsort" id="sort">
+            <select>
+                <option value="1" selected>Default Sort</option>
+                <option value="1">High to low</option>
+                <option value="1">Low to high</option>
+                <option value="1">Under ₹500</option>
+                <option value="1">Above ₹500</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <a href="singleproduct.html"><img src="images/product-1.jpg" alt="product">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>Red Printed T-shirt</p>
+                    <p>₹199</p>
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="product-2.html"> <img src="images/product-2.jpg" alt="product">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>HRX sport shoes</p>
+                    <p>₹499</p>
+                </a>
+            </div>
+            <div class="col-5">
+                <img src="images/product-3.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Snicker Shoes</p>
+                <p>₹200</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-4.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Light blue Printed Puma T-shirt</p>
+                <p>₹499</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-5.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>Spark Sport Shoes</p>
+                <p>₹899</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-6.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>PUMA Black T-Shirt</p>
+                <p>₹498</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-7.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>HRX Black and White Shoes</p>
+                <p>₹699</p>
+            </div>
+            <div class="col-5">
+                <a href="product-8.html"> <img src="images/product-8.jpg" alt="product">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <p>FOSSIL Watch</p>
+                    <p>₹349</p>
+                </a>
+            </div>
+            <div class="col-5">
+                <img src="images/product-9.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>Sony Watch</p>
+                <p>₹649</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-10.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>HRX shoes</p>
+                <p>₹849</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-11.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>Formal shoes</p>
+                <p>₹449</p>
+            </div>
+            <div class="col-5">
+                <img src="images/product-12.jpg" alt="product">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>Nick Black Trouser</p>
+                <p>₹699</p>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------footer-------------------- -->
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="foot" id="foot1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iphone</p>
+                    <div class="app"><img src="images/play-store.png"><img src="images/app-store.png"></div>
+                </div>
+                <div class="foot" id="foot2">
+                    <img src="images/vishal.png" alt="">
+                    <p>Our Purchase in To Sustainably Make the Pleasure and
+                        Benifits of Sport Acceptable to the Money.
+                    </p>
+                </div>
+                <div class="foot" id="footer3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Coupon</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Afflicate</a></li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <p>Copyright 2020 Vishal-Store</p>
+    </div>
+    <script>
+        let menuitem = document.getElementById(`menulist`);
+        console.log(menuitem)
+        menuitem.style.maxHeight = `0px`;
+        function toggle() {
+            if (menuitem.style.maxHeight == `0px`) {
+                menuitem.style.maxHeight = `200px`;
+                document.getElementById(`sort`).style.display = `none`;
+            }
+            else {
+                menuitem.style.maxHeight = `0px`;
+                document.getElementById(`sort`).style.display = `inline-block`;
+            }
+        }
+    </script>
+</body>
+
+</html>

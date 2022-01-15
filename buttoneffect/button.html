@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishalweb/Button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+    <div class="logo"> Right click for Reset
+    </div>
+    <div class="button">
+        <div class="hover"><a href="#">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                Hover Me
+            </a></div>
+        <div class="click"> <a href="#">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                Click Me
+            </a>
+        </div>
+        <div class="extra"> <a href="#">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                NEW
+            </a>
+        </div>
+        <div class="click color"> <a href="#">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                Colour Effect
+            </a>
+        </div>
+
+    </div>
+    <script>
+        document.body.addEventListener("contextmenu", function () {
+            document.body.style.backgroundColor = `#1f242d`;
+        });
+
+        let a = document.getElementsByClassName(`hover`)[0];
+        a.addEventListener("click", function () {
+            document.body.style.backgroundColor = `#ffff00`;
+        });
+        a = document.getElementsByClassName(`click`)[0];
+        a.addEventListener("click", function () {
+            document.body.style.backgroundColor = `#f000a0`;
+        })
+        a = document.getElementsByClassName(`extra`)[0];
+        a.addEventListener("click", function () {
+            document.body.style.backgroundColor = `#10f12e`;
+        })
+        a = document.getElementsByClassName(`color`)[0];
+        a.addEventListener("click", function () {
+            document.body.style.backgroundColor = `#ff2828`;
+        })
+    </script>
+</body>
+
+</html>

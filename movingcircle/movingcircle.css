@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(#0001,#0004);
+}
+.container .circle{
+
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+}
+.light{
+    animation: round 1.5s linear infinite;
+
+}
+.container .circle::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,transparent,#00fff999);
+    background-size: 100px 180px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.container .circle::after{
+    content: "";
+    position: absolute;
+    top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #00fff9;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00fff9,
+    0 0 20px #00fff9,
+    0 0 30px #00fff9,
+    0 0 40px #00fff9,
+    0 0 50px #00fff9,
+    0 0 60px #00fff9,
+    0 0 70px #00fff9,
+    0 0 80px #00fff9,
+    0 0 90px #00fff9,
+    0 0 100px #00fff9;
+}
+.container span{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: rgb(13, 35, 35);
+    /* background-color: rgb(33, 53, 53); */
+}
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* ---------------------------second circle----------- */
+.text{
+    margin-left: 100px;
+    animation: round 1s linear infinite;
+}
+.text span{
+    background-blend-mode: screen;
+    background-size: cover;
+    text-align: center;
+    padding-top: 140px;
+    color: red;
+    animation: change .5s linear infinite;
+}
+@keyframes change{
+    0%{
+        background: radial-gradient(red,green,yellow,purple,indigo,blue);
+    }
+    20%{
+        background: radial-gradient(blue,red,green,yellow,purple,indigo);
+    }
+    40%{
+        background: radial-gradient(indigo,blue,red,green,yellow,purple);
+        
+    }
+    60%{
+        background: radial-gradient(purple,indigo,blue,red,green,yellow);
+        
+    }
+    80%{
+        background: radial-gradient(yellow,purple,indigo,blue,red,green);
+        
+    }
+    100%{
+        background: radial-gradient(green,yellow,purple,indigo,blue,red);
+        
+    }
+}
+.text span::after{
+    content: "VISHAL";
+}
+/* ----------------------thin circle----------- */
+.thin{
+    margin-left: 100px;
+    animation: round .5s linear infinite;
+
+}
+.container .thin::before{
+    background:#ff003799;
+}
+.container .thin span{
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+}
+.container .thin::after{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(248, 25, 25);
+    box-shadow: 0 0 10px red,
+    0 0 20px red,
+    0 0 30px red,
+    0 0 40px red,
+    0 0 50px red,
+    0 0 60px red,
+    0 0 70px red,
+    0 0 80px red,
+    0 0 90px red,
+    0 0 100px red;
+}
+@media only screen and (max-width:800px){
+    body{
+    
+        height: 100%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .container:nth-child(2){
+       margin-top: 220px;
+    }
+    .container:nth-child(3){
+       margin-top: 220px;
+       margin-bottom: 210px;
+    }
+}
